@@ -1,6 +1,6 @@
 # Lyricgenius
 
-TODO: Write a gem description
+Get song lyrics and metadata based on query
 
 ## Installation
 
@@ -18,7 +18,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Search for song information:
+```ruby
+agent = LyricGenius::Song.new
+song_information = agent.search "real slim shady"
+```
+Output:
+```ruby
+{
+    :title => "The Real Slim Shady Lyrics",
+    :artist => "Eminem",
+    :lyrics => "\n    \n  [Eminem]May I have your attention please\nMay I have your attention please
+    Will the real Slim Shady please stand ...(REMAINDER OF LYRICS)...\nFuck it, let’s all stand up"
+}
+```
 
 ## Contributing
 

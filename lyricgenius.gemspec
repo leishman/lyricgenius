@@ -6,11 +6,11 @@ require 'lyricgenius/version'
 Gem::Specification.new do |spec|
   spec.name          = "lyricgenius"
   spec.version       = Lyricgenius::VERSION
-  spec.authors       = ["Alexander Leishman"]
-  spec.email         = ["null"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.authors       = ["Alexander Leishman, Sam Samskies"]
+  spec.email         = ["leishman3@gmail.com"]
+  spec.description   = %q{Get song lyrics and metadata based on query}
+  spec.summary       = %q{Get song lyrics and metadata based on query}
+  spec.homepage      = "https://github.com/leishman/lyricgenius"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "pry"
+  spec.add_dependency "mechanize"
 end
